@@ -1,0 +1,49 @@
+Este é um programa em C++ para CONSOLE utilizando preferencialmente POO que:
+o Imprima na tela os N primeiros registros, do arquivo especificado pelo usuário, de
+forma organizada.
+▪ O programa deve receber por linha de comando o nome do arquivo e o
+valor N do usuário, ou seja, usando argc e argv, usando a formatação
+abaixo:
+▪ ./nome_executável F nome_arquivo_CSV N valor_de_N
+• Exemplo:
+o ./nome_executável F D140193-2021-06-28.csv N 10
+▪ Deverá ser impresso na tela os 10 primeiros
+registros do arquivo especificado.
+o Imprima na tela os dados do arquivo especificado pelo usuário em um determinado
+tempo t dado pelo usuário no formato HH:MM:SS
+▪ ./nome_executável F nome_arquivo_CSV t valor_de_t
+▪ Exemplo:
+• ./nome_executável F D140193-2021-06-28.csv t 01:40:00
+o Imprime os valores do registro no tempo de 01:40:00.
+o Imprima na tela os dados do arquivo especificado pelo usuário em um determinado
+período ti e tf
+▪ ./nome_executável F nome_arquivo_CSV ti valor_de_ti tf valor_de_tf
+▪ Exemplo:
+• ./nome_executável F D140193-2021-06-28.csv ti 01:40:00 tf
+05:30:00
+o Imprime os valores do registro no intervalo dado.
+o Imprima na tela os dados do arquivo especificado pelo usuário de uma determinada
+variável V dado pelo usuário em que V segue a numeração da tabela de dados
+mostrado no fim deste documento.
+▪ ./nome_executável F nome_arquivo_CSV V valor_de_v
+▪ Exemplo:
+• ./nome_executável F D140193-2021-06-28.csv V 14
+o Imprime os valores da variável 14 (14. Hygro/Thermo
+temperature Avg (°C)).
+o Imprima na tela o valor máximo Vmax de uma determinada variável V dado pelo
+usuário considerando os dados do arquivo especificado pelo usuário.
+▪ ./nome_executável F nome_arquivo_CSV V valor_de_v Vmax
+3
+▪ Exemplo:
+• ./nome_executável F D140193-2021-06-28.csv V 14 Vmax
+o Imprime o valor máximo do arquivo da variável 14
+o Imprima na tela o valor máximo Vmin de uma determinada variável V dado pelo
+usuário considerando os dados do arquivo especificado pelo usuário.
+▪ ./nome_executável F nome_arquivo_CSV V valor_de_v Vmin
+▪ Exemplo:
+• ./nome_executável F nome_arquivo_CSV V 14 Vmin
+o Imprime o valor mínimo do arquivo da variável 14
+o Agregue as funcionalidades das questões anteriores em qualquer ordem e em
+qualquer combinação, por exemplo:
+./nome_executável F D140193-2021-06-28.csv N 10 V 14
+./nome_executável V 14 F D140193-2021-06-28.csv ti 02:40:00 tf 05:30:00
